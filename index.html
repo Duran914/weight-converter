@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Weight Converter</title>
+  </head>
+  <body class="mt-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <h1 class="display-4 text-center">Weight Converter</h1>
+                <p class="text-center" style="color: #949292">A simple weight converter. <br> Select a weight type to begin.</p>
+                <form>
+                <div class="form-group text-center">
+                        <label for="unitOfWeight">Unit of Measurement</label>
+                        <select class="form-control" id="unit">
+                            <option value="pounds">Pounds</option>
+                            <option value="grams">Grams</option>
+                            <option value="kilograms">Killograms</option>
+                            <option value="ounces">Ounces</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <input type="number" id='weightInput' class="form-control form-control-lg" placeholder="Enter pounds...">
+                    </div>
+                </form>
+                <div id="output">
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h4>
+                                <span id="unit1">Grams: </span>
+                                <span id="gramsOutput"></span>
+                            </h4>
+                        </div>
+                    </div>
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h4> 
+                                <span id="unit2">Killograms: </span> 
+                                <span id="kiloOutput"></span>
+                            </h4>
+                        </div>
+                    </div>
+                    <div class="card mb-3">
+                        <div class="card-body">
+                            <h4>
+                                <span id='unit3'>Ounces: </span>
+                                <span id="ouncesOutput"></span>
+                            </h4>
+                        </div>
+                    </div>     
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="convert.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

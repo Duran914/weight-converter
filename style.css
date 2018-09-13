@@ -1,0 +1,29 @@
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    outline: none;
+}
+
+.card:nth-child(1){
+    border: 4px solid #2463a7;
+    background-color: #679cd4;
+    color: #ffffff;
+}
+
+.card:nth-child(2){
+    border: 4px solid #125e24;
+    background-color: #54bb6c;
+    color: #ffffff;
+}
+
+.card:nth-child(3){
+    border: 4px solid #8d1616;
+    background-color: #cf7474;
+    color: #ffffff;
+}
+
+/* Input fields */
+.form-control:focus{
+    outline: none;
+    box-shadow: none;
+    border-color: rgb(107, 107, 107);
+}
